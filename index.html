@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body class="primary-font text-tertiary bg-gray-100 p-6 px-10 lg:max-w-9xl lg:mx-auto">
+
+    <!-- Navbar -->
+
+    <nav class="flex justify-between items-center p-5 bg-white rounded">
+        <div class="flex items-center gap-3">
+          <img src="./assets/logo.png" alt="Site Icon" />
+          <h1 class="block text-5xl font-light">
+            Dev<span class="font-bold">Board</span>
+          </h1>
+        </div>
+        <div class="flex items-center gap-3">
+          <div
+            class="flex bg-secondary px-4 py-3 rounded-full items-center gap-2 text-xl font-bold">
+            <img class="w-6" src="./assets/checkbox.png" alt="" /><span class="task-completed">23</span>
+          </div>
+          <div
+            class="bg-secondary p-3 rounded-full cursor-pointer color-wheel-btn">
+            <img class="w-8" src="./assets/theme-btn.png" alt="" />
+          </div>
+        </div>
+    </nav>
+    <!-- Cards -->
+    
+    <div class="grid grid-cols-4 gap-4 mt-6">
+        <!-- Assigned task section -->
+        <div class="col-span-3 bg-primary p-6 rounded-lg">
+          <div class="cols-span-3 bg-white p-6 rounded-lg ">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-gray-100 p-4 rounded-lg flex items-center space-x-3">
+                    <div class="bg-secondary size-16 p-4 rounded-full flex items-center">
+                      <img src="./assets/checkbox.png" alt="">
+                    </div>
+                    <div>
+                        <p class="text-sm">Task Assigned</p>
+                        <p class="text-2xl font-bold">05</p>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] p-5 rounded-lg flex items-center gap-5 cursor-pointer">
+                  <img src="./assets/board.png" alt="Discover" />
+                  <h3 class="text-white text-2xl font-bold">Discover Something<br> New Today! </h3>
+              </div>
+              <div class="bg-gray-100 p-5 rounded-lg flex items-center gap-5">
+                <div class="bg-secondary size-16 p-4 rounded-full flex items-center">
+                  <img src="./assets/calender.png" alt="">
+                </div>
+                <div>
+                  <h5 class="day">Tues</h5>
+                  <h4 class="font-bold date">Mar 11 2025</h4>
+                </div>
+              </div>
+            </div>
+            <!-- Task Cards -->
+            <div class="grid grid-cols-3 gap-4 mt-4">
+                
+              <!-- Task Card -->
+              <div class="bg-gray-100 p-4 rounded-lg shadow-lg" data-task-id="1">
+                  <p class="bg-white py-2 px-4 w-fit rounded-lg mb-3">ShopEase</p>
+                  <h3 class="text-lg font-semibold mt-1">Fix Mobile Button Issue</h3>
+                  <p class="bg-white text-xs text-gray-500 mt-2">Debug using Chrome DevTools, check for overlapping...</p>
+                  <hr class="my-3 border-t-2 border-gray-300 border-dashed">
+                  <p class="text-xs font-semibold text-gray-500 mt-4">Deadline</p>
+                  <p class="text-sm font-bold text-gray-700">21 March 2025</p>
+                  <button class="complete-btn bg-blue-500 text-white px-4 py-2 rounded-lg mt-3 w-full">Completed</button>
+              </div>
+
+              
+              <div class="bg-gray-100 p-4 rounded-lg shadow-lg" data-task-id="2">
+                  <p class="bg-white py-2 px-4 w-fit rounded-lg mb-3">CloudSync</p>
+                  <h3 class="text-lg font-semibold mt-1">Add Dark Mode</h3>
+                  <p class="bg-white text-xs text-gray-500 mt-2">Store the user’s preference in localStorage, update CSS variables...</p>
+                  <hr class="my-3 border-t-2 border-gray-300 border-dashed">
+                  <p class="text-xs font-semibold text-gray-500 mt-4">Deadline</p>
+                  <p class="text-sm font-bold text-gray-700">21 March 2025</p>
+                  <button class="complete-btn bg-blue-500 text-white px-4 py-2 rounded-lg mt-3 w-full">Completed</button>
+              </div>
+
+              <div class="bg-gray-100 p-4 rounded-lg shadow-lg" data-task-id="3">
+                  <p class="bg-white py-2 px-4 w-fit rounded-lg mb-3">SwiftPay</p>
+                  <h3 class="text-lg font-semibold mt-1">Optimize Home Page</h3>
+                  <p class="bg-white text-xs text-gray-500 mt-2">Debug using Chrome DevTools, check for overlapping...</p>
+                  <hr class="my-3 border-t-2 border-gray-300 border-dashed">
+                  <p class="text-xs font-semibold text-gray-500 mt-4">Deadline</p>
+                  <p class="text-sm font-bold text-gray-700">21 March 2025</p>
+                  <button class="complete-btn bg-blue-500 text-white px-4 py-2 rounded-lg mt-3 w-full">Completed</button>
+              </div>
+              <div class="bg-gray-100 p-4 rounded-lg shadow-lg" data-task-id="4">
+                <p class="bg-white py-2 px-4 w-fit rounded-lg mb-3">Meta</p>
+                <h3 class="text-lg font-semibold mt-1">Add new emoji 🙌</h3>
+                <p class="bg-white text-xs text-gray-500 mt-2">Debug using Chrome DevTools, check for overlapping...</p>
+                <hr class="my-3 border-t-2 border-gray-300 border-dashed">
+                <p class="text-xs font-semibold text-gray-500 mt-4">Deadline</p>
+                <p class="text-sm font-bold text-gray-700">21 March 2025</p>
+                <button class="complete-btn bg-blue-500 text-white px-4 py-2 rounded-lg mt-3 w-full">Completed</button>
+            </div>
+            
+            <div class="bg-gray-100 p-4 rounded-lg shadow-lg" data-task-id="5">
+                <p class="bg-white py-2 px-4 w-fit rounded-lg mb-3">Google LLC</p>
+                <h3 class="text-lg font-semibold mt-1">Integrate OpenAI API</h3>
+                <p class="bg-white text-xs text-gray-500 mt-2">Debug using Chrome DevTools, check for overlapping...</p>
+                <hr class="my-3 border-t-2 border-gray-300 border-dashed">
+                <p class="text-xs font-semibold text-gray-500 mt-4">Deadline</p>
+                <p class="text-sm font-bold text-gray-700">21 March 2025</p>
+                <button class="complete-btn bg-blue-500 text-white px-4 py-2 rounded-lg mt-3 w-full">Completed</button>
+            </div>
+            
+            <div class="bg-gray-100 p-4 rounded-lg shadow-lg" data-task-id="6">
+                <p class="bg-white py-2 px-4 w-fit rounded-lg mb-3">Glassdoor</p>
+                <h3 class="text-lg font-semibold mt-1">Improve Job Searching</h3>
+                <p class="bg-white text-xs text-gray-500 mt-2">Debug using Chrome DevTools, check for overlapping...</p>
+                <hr class="my-3 border-t-2 border-gray-300 border-dashed">
+                <p class="text-xs font-semibold text-gray-500 mt-4">Deadline</p>
+                <p class="text-sm font-bold text-gray-700">21 March 2025</p>
+                <button class="complete-btn bg-blue-500 text-white px-4 py-2 rounded-lg mt-3 w-full">Completed</button>
+            </div>
+          </div>
+          </div>
+        </div>
+        
+        <!--Activity Log -->
+        <div class="col-span-1 bg-primary p-6 rounded-lg shadow-lg">
+            <h2 class="text-lg font-bold mb-4">Activity Log</h2>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded mb-4">Clear History</button>
+            <div class="bg-gray-200 p-3 rounded-lg mb-2 text-sm">
+                ami sesh hoye jabo task korte korte
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>
