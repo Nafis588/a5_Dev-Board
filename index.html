@@ -42,10 +42,10 @@
                     </div>
                     <div>
                         <p class="text-sm">Task Assigned</p>
-                        <p class="text-2xl font-bold">05</p>
+                        <p class="text-2xl font-bold">06</p>
                     </div>
                 </div>
-                <div class="bg-gradient-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] p-5 rounded-lg flex items-center gap-5 cursor-pointer">
+                <div class="bg-gradient-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] p-5 rounded-lg flex items-center gap-5 cursor-pointer" onclick="window.location.href = 'page2.html'">
                   <img src="./assets/board.png" alt="Discover" />
                   <h3 class="text-white text-2xl font-bold">Discover Something<br> New Today! </h3>
               </div>
@@ -128,13 +128,16 @@
         
         <!--Activity Log -->
         <div class="col-span-1 bg-primary p-6 rounded-lg shadow-lg">
-            <h2 class="text-lg font-bold mb-4">Activity Log</h2>
-            <button class="bg-blue-500 text-white px-4 py-2 rounded mb-4">Clear History</button>
+          <div class="flex flex-row items-center justify-center gap-1">
+            <img src="./assets/activity.png" alt="">
+            <h2 class="text-lg font-bold">Activity Log</h2>
+          </div>
+            <button class="bg-blue-500 text-white px-4 py-4 rounded m-4 block mx-auto">Clear History</button>
             <div class="bg-gray-200 p-3 rounded-lg mb-2 text-sm">
-                ami sesh hoye jabo task korte korte
-            </div>
-           
+            
+           </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
