@@ -37,10 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Update Count
             if (taskAssigned > 0) {
-                taskAssigned -= 1; // Decrease Task Assigned
+                taskAssigned -= 1;
                 taskAssignedElement.innerText = taskAssigned;
             }
-            taskCompleted += 1; // Increase Task Completed
+            taskCompleted += 1;
             taskCompletedElement.innerText = taskCompleted;
 
             // Disable
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Add activity
             let logEntry = document.createElement("p");
             logEntry.innerText = `You have successfully completed ${taskTitle} at time ${new Date().toLocaleTimeString()}`;
-            logEntry.classList.add("text-sm", "text-gray-700", "mt-2", "p-2", "rounded");
+            logEntry.classList.add("text-sm", "text-gray-700", "mt-2","bg-gray-100", "p-2", "rounded");
             activityLog.appendChild(logEntry);
         }
     }
