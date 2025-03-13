@@ -21,11 +21,11 @@
         <div class="flex items-center gap-3">
           <div
             class="flex bg-secondary px-4 py-3 rounded-full items-center gap-2 text-xl font-bold">
-            <img class="w-6" src="./assets/checkbox.png" alt="" /><span class="task-completed">23</span>
+            <img class="w-6" src="./assets/checkbox.png" alt="" /><span class="task-completed" id="completed_task">23</span>
           </div>
           <div
             class="bg-secondary p-3 rounded-full cursor-pointer color-wheel-btn">
-            <img class="w-8" src="./assets/theme-btn.png" alt="" />
+            <img class="w-8" id="color-wheel-btn" src="./assets/theme-btn.png" alt="" />
           </div>
         </div>
     </nav>
@@ -42,7 +42,7 @@
                     </div>
                     <div>
                         <p class="text-sm">Task Assigned</p>
-                        <p class="text-2xl font-bold">06</p>
+                        <p class="text-2xl font-bold" id="assigned_task">06</p>
                     </div>
                 </div>
                 <div class="bg-gradient-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] p-5 rounded-lg flex items-center gap-5 cursor-pointer" onclick="window.location.href = 'page2.html'">
@@ -127,13 +127,13 @@
         </div>
         
         <!--Activity Log -->
-        <div class="col-span-1 bg-primary p-6 rounded-lg shadow-lg">
+        <div class="col-span-1 bg-white p-6 rounded-lg shadow-lg">
           <div class="flex flex-row items-center justify-center gap-1">
             <img src="./assets/activity.png" alt="">
             <h2 class="text-lg font-bold">Activity Log</h2>
           </div>
-            <button class="bg-blue-500 text-white px-4 py-4 rounded m-4 block mx-auto">Clear History</button>
-            <div class="bg-gray-200 p-3 rounded-lg mb-2 text-sm">
+            <button class="bg-blue-500 text-white px-4 py-4 rounded m-4 block mx-auto " id="clear-history-btn">Clear History</button>
+            <div class="bg-gray-100 p-3 rounded-lg mb-2 text-sm" id="activity">
             
            </div>
         </div>
